@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-[#0b0430];
+    @apply bg-[#3c3c53];
   }
 } 
  
@@ -40,4 +40,6 @@ body {
     object-fit: cover;
     
   }
+
+
 }
