@@ -61,7 +61,7 @@ const Attractions = () => {
                 </div>
                 <h3 className="text-gold text-xl mb-2">Strbske Pleso
                     <span className="block md:hidden"><br /></span>
-                    <span span className="hidden md:inline"></span>
+                    <span className="hidden md:inline"></span>
                 </h3>
                 <p className="text-gray-200 [text-align:justify] text-sm">
                     The resort of Štrbské Pleso is the highest located ski resort and the longest ski season Slovakia. It attracts skiers due to great snow conditions, excellent tracks for slalom, downhill, cross-country skiing and top-quality services.

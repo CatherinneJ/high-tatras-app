@@ -19,7 +19,7 @@ const Hero = () => {
         </h3>
       </div>
       {/* Banner picture */}
-      <div className=" hero-banner z-10 md:h-[420px] lg:h-[500px]">
+      <div className=" hero-banner z-10 md:h-[420px] lg:h-[500px] mb-10">
         <img
           src="/images/mountains.jpg"
           alt="Mountains"
