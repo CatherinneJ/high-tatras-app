@@ -1,22 +1,102 @@
-import React from 'react'
-import Button from '../components/Button'
+import { useRef, useState } from "react";
+import Button from "../components/Button";
+
 
 const Contact = () => {
-  return (
-    
-    <section className=" text-gray-400 px-6 py-10 max-w-6xl mx-auto">
-        <div className="w-full h-px bg-gray-200 my-16"></div>
-        <div className="flex flex-col lg:flex-row justify-between gap-6">
-            <div className="md:w-[40%]">
+    const formRef = useRef(null);
+    const [success, setSuccess] = useState(false);
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setForm({ ...form, [name]: value });
+    };
+
+    const handleSubmit = async (e) => {
+     e.preventDefault();
+     setSuccess(true);
+     setForm({ name: "", email: "", message: "" });
+     setTimeout(() => setSuccess(false), 4000);
+    };
+
+
+    return (
+        <section id="contact" className="max-w-screen-xl mx-auto px-8 sm:px-12 md:px-12 lg:px-16 py-20">
+            <div className="w-full h-px bg-gray-200 mb-20"></div>
+
+            <div className="mb-6 max-w-md">
                 <h1 className="text-3xl font-serif md:text-3xl text-left text-white">Planning your trip or have questions? </h1>
                 <p className="italic text-gold text-3xl font-serif underline mt-4">Send us a hi</p>
-                <Button
-                className="md:w-80 md:h-16 w-60 h-12" 
-                id="button"
-                text="contact"
-                />
             </div>
-            <div className="mt-10 md:mt-0 md:w-[40%] space-y-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">   
+                    <form
+                      ref={formRef}
+                      onSubmit={handleSubmit}
+                      className="flex flex-col gap-2 max-w-sm"
+                    >
+                      <div>
+                        <label className="block text-xs text-gray-300 mb-1">Your name</label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          value={form.name}
+                          onChange={handleChange}
+                          required
+                          className="w-full bg-transparent border-b border-white/30 py-2 text-white text-sm focus:outline-none focus:border-gold resize-none"
+                        />
+                     </div>
+
+                    <div>
+                      <label className="block text-xs text-gray-300 mb-1">Your Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value={form.email}
+                        onChange={handleChange}
+                        required
+                        className="w-full bg-transparent border-b border-white/30 py-2 text-white text-sm focus:outline-none focus:border-gold resize-none"
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-xs text-gray-300 mb-1">Your Message</label>
+                      <textarea
+                        name="message"
+                        value={form.message}
+                        onChange={handleChange}
+                        rows="3"
+                        required
+                        className="w-full bg-transparent border-b border-white/30 py-2 text-white text-sm focus:outline-none focus:border-gold resize-none"
+                     />
+                    </div>
+                    
+                    <div className="mt-4">
+                      <button type="submit" className="md:w-70 md:h-14 w-50 h-10">
+                        <div className="cta-button group">
+                            <div className="bg-circle" />
+                             <p className="text">{ "Send message" }</p>
+                             <div className="arrow-wrap">
+                                <img 
+                                src="/images/arrow.svg" 
+                                alt="arrow" 
+                                />
+                             </div>                          
+                        </div>                     
+                      </button>
+                    </div>
+
+                    {success && (
+                      <p className="text-xs text-gold mt-2 italic">Thank you! Your message has been sent.</p>
+                  )}          
+                </form>
+                    
+                    <div className="mt-10 md:mt-0 md:w-[40%] space-y-6">
                 <div>
                     <h5 className="text-lg font-serif text-gray-200">High Tatras, Slovakia</h5>
                     <p className="text-sm text-gray-200">Starý Smokovec 1</p>
@@ -33,8 +113,9 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-    </section>
-  )
-}
+        
+        </section>
+    );
+};
 
-export default Contact
+export default Contact;
