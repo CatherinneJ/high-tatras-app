@@ -113,7 +113,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        
+        <div className="mt-14 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
         </section>
     );
 };
