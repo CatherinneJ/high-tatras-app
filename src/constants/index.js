@@ -1,3 +1,22 @@
+export const navLinks = [
+  // {
+  //    name: "Home",
+  //    link: "#home",
+  //  },
+  {
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Attractions",
+    link: "#attractions",
+  },
+  {
+    name: "Activities",
+    link: "#activities",
+  },
+];
+
 export const words = [
   { text: "Skiing", imgPath: import.meta.env.BASE_URL + "images/skiing.svg" },
   { text: "Hiking", imgPath: import.meta.env.BASE_URL + "images/hiking.svg" },

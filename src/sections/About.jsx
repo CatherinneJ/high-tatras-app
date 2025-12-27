@@ -6,7 +6,7 @@ function About() {
       {/* Text on the left */}
       <div className="md:w-1/2 md:flex-shrink-0 xl:px-12">
         <div className="flex items-center space-x-4 mb-4">
-          <div className="h-px bg-[var(--my-bg-color)] w-12 sm:w-20"></div>
+          <div className="h-px pt-24 w-12 sm:w-20"></div>
           <p className="text-sm font-semibold uppercase tracking-widest text-gold">
             About
           </p>
@@ -26,13 +26,13 @@ function About() {
           src="/images/spring.jpg" 
           alt="spring" 
           className="w-full h-auto object-cover rounded-lg shadow-sm z-20 -mt-8"
-          style={{maxHeight: "200px"}}
+          style={{maxHeight: "180px"}}
         />
         <img 
           src="/images/tatry.jpg" 
           alt="tatry" 
           className="w-full h-auto object-cover rounded-lg shadow-sm z-10"
-          style={{maxHeight: "200px"}}
+          style={{maxHeight: "180px"}}
         />
       </div>
     </section>

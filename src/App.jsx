@@ -5,13 +5,14 @@ import Attractions  from './sections/Attractions.jsx'
 import Activities from './sections/Activities.jsx'
 import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
+import Navbar from './components/Navbar.jsx'
 
 
 
 const App = () => {
   return (
     <>
-    
+      <Navbar />
       <Hero />
       <About />
       <Attractions />

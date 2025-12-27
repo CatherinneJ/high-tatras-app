@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { navLinks } from "../constants/index.js";
+import { navLinks } from "../constants";
 
 const Navbar = () => {
     const[scrolled, setScrolled] = useState(false);
@@ -16,8 +16,8 @@ const Navbar = () => {
         <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
             <div className="inner">
                 <img 
-                src="/images/logo.png"
-                className="logo" 
+                src="/images/logoTatry.png"
+                className="rounded-full w-12 h-10 mb-3 rounded-sm self-start text-gold" 
                 href="#hero"
                 />
                 <nav className="desktop">
