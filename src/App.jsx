@@ -7,9 +7,11 @@ import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 
 
+
 const App = () => {
   return (
     <>
+    
       <Hero />
       <About />
       <Attractions />
