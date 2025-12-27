@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../components/Button'
 
 const Contact = () => {
   return (
@@ -9,6 +10,11 @@ const Contact = () => {
             <div className="md:w-[40%]">
                 <h1 className="text-3xl font-serif md:text-3xl text-left text-white">Planning your trip or have questions? </h1>
                 <p className="italic text-gold text-3xl font-serif underline mt-4">Send us a hi</p>
+                <Button
+                className="md:w-80 md:h-16 w-60 h-12" 
+                id="button"
+                text="contact"
+                />
             </div>
             <div className="mt-10 md:mt-0 md:w-[40%] space-y-6">
                 <div>

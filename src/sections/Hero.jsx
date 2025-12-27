@@ -21,7 +21,7 @@ const Hero = () => {
       {/* Banner picture */}
       <div className=" hero-banner z-10 md:h-[420px] lg:h-[500px] mb-10">
         <img
-          src="/images/mountains.jpg"
+          src="/images/mountains-4.jpg"
           alt="Mountains"
           className="hero-banner"
         />
@@ -31,7 +31,7 @@ const Hero = () => {
 
         {/* Text over banner */}
         <div className="absolute inset-0 flex items-center justify-center z-30">
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+          <h1 className="text-cyan-400 text-4xl md:text-5xl lg:text-6xl font-bold text-center">
             Enjoy mountains of experience
           </h1>
         </div>
