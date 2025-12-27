@@ -11,10 +11,10 @@ const Hero = () => {
       </div>
       {/* Contest behind banner */}
       <div className="px-4 md:px-20 py-10 text-center">
-        <h3 className="text-xl md:text-2xl font-semibold text-white">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif leading-tight text-white">
           Experience breathtaking mountains, crystal-clear lakes, and unforgettable adventures in the heart of Slovakia.
         </h3>
-        <h3 className="text-lg md:text-xl font-medium text-white mt-4">
+        <h3 className="text-sm md:text-base font-medium text-white mt-4">
           A perfect destination for hiking, skiing, and relaxing in pristine nature all year round.
         </h3>
       </div>
