@@ -22,7 +22,7 @@ const Hero = () => {
         {/* Banner picture */}
         <div className="relative hero-banner md:h-[280px] lg:h-[300px] rounded-xl">
           <img
-            src="/images/mountains-4.jpg"
+            src="/images/mountains.jpg"
             alt="Mountains"
             className="w-full h-full object-cover"
           />

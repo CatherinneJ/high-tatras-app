@@ -7,6 +7,7 @@ import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 import Navbar from './components/Navbar.jsx'
 import HeroIntro from './sections/HeroIntro.jsx'
+import ScrollHome from './components/ScrollHome.jsx'
 
 
 
@@ -21,6 +22,8 @@ const App = () => {
       <Activities /> 
       <Contact />
       <Footer />
+
+      <ScrollHome />
     
     </>
   )

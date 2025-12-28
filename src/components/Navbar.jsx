@@ -35,10 +35,8 @@ const Navbar = () => {
                 </nav>
                 <a href="#contact" className="contact-btn group">
                     <div className="inner">
-                        <span>Contact us</span>
-
+                        <span>CONTACT US</span>
                     </div>
-
                 </a>
 
             </div>
