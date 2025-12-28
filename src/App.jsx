@@ -6,6 +6,7 @@ import Activities from './sections/Activities.jsx'
 import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 import Navbar from './components/Navbar.jsx'
+import HeroIntro from './sections/HeroIntro.jsx'
 
 
 
@@ -14,6 +15,7 @@ const App = () => {
     <>
       <Navbar />
       <Hero />
+      <HeroIntro />
       <About />
       <Attractions />
       <Activities /> 

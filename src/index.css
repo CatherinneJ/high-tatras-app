@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    @apply bg-[#154649];
+    @apply bg-[#133f41];
   }
 } 
  
@@ -20,7 +20,7 @@ body {
   height: 100%;
   font-family: "Mona Sans", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 96px;
 }
 
 #root {
@@ -30,10 +30,11 @@ body {
 
 @layer components {
   .hero-banner {
-    width: 97%;
     height: 250px;
     position: relative;
     overflow: hidden; 
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-banner img {
@@ -137,7 +138,7 @@ body {
         @apply fixed w-full left-1/2 py-5 px-5 md:px-20 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
 
         &.scrolled {
-            @apply top-0 bg-[#154649];
+            @apply top-0 bg-[#133f41];
         }
 
         &.not-scrolled {

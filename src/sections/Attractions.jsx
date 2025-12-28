@@ -2,7 +2,7 @@ import React from 'react'
 
 const Attractions = () => {
   return (
-     <section className="max-w-screen-xl mx-auto px-6 sm:px-10 md:px-12 xl:px-12 py-16">
+     <section id="attractions" className="bg-[#154649] max-w-screen-xl mx-auto px-6 sm:px-10 md:px-12 xl:px-12 py-16">
         <div className="mb-12 xl:px-12">
             <div className="flex items-center space-x-4 mb-2">
                 <div className="h-px w-12 sm:w-20"></div>

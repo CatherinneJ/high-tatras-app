@@ -25,7 +25,7 @@ const Contact = () => {
 
 
     return (
-        <section id="contact" className="max-w-screen-xl mx-auto px-8 sm:px-12 md:px-12 lg:px-16 py-20">
+        <section id="contact" className="bg-[#154649] max-w-screen-xl mx-auto px-8 sm:px-12 md:px-12 lg:px-16 py-20">
             <div className="w-full h-px bg-gray-200 mb-20"></div>
 
             <div className="mb-6 max-w-md">

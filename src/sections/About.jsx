@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section className="flex flex-col md:flex-row md:items-start items-center gap-8 px-4 sm:px-6 lg:px-16 py-6 sm:py-8 md:py-12 animate__backInLeft" style={{animationDuration: "2s"}}>
+    <section id="about" className="bg-[#154649] flex flex-col md:flex-row md:items-start items-center gap-8 px-4 sm:px-6 lg:px-16 py-6 sm:py-8 md:py-12 animate__backInLeft" style={{animationDuration: "2s"}}>
       {/* Text on the left */}
       <div className="md:w-1/2 md:flex-shrink-0 xl:px-12">
         <div className="flex items-center space-x-4 mb-4">

@@ -5,7 +5,7 @@ import { words } from "../constants/index.js";
 const Activities = () => {
   
   return (
-    <section className="max-w-screen-xl mx-auto px-6 sm:px-10 md:px-12 lg:px-16 py-16">
+    <section id="activities" className="bg-[#154649] max-w-screen-xl mx-auto px-6 sm:px-10 md:px-12 lg:px-16 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="flex flex-col">
                 <div className="flex items-center space-x-4 mb-2">
