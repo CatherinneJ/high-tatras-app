@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import Button from "../components/Button";
+import ButtonForm from "../components/ButtonForm.jsx";
 
 
 const Contact = () => {
@@ -77,18 +77,8 @@ const Contact = () => {
                     </div>
                     
                     <div className="mt-4">
-                      <button type="submit" className="md:w-70 md:h-14 w-50 h-10">
-                        <div className="cta-button group">
-                            <div className="bg-circle" />
-                             <p className="text">{ "Send message" }</p>
-                             <div className="arrow-wrap">
-                                <img 
-                                src="/images/arrow.svg" 
-                                alt="arrow" 
-                                />
-                             </div>                          
-                        </div>                     
-                      </button>
+                      <ButtonForm text="Send message">                    
+                      </ButtonForm>
                     </div>
 
                     {success && (
