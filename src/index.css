@@ -116,9 +116,7 @@ body {
             @apply mx-auto flex items-center justify-between  group-hover:bg-cyan-600/90;
         }
 
-        /* .logo {
-            @apply text-white text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
-        } */
+        
 
         nav.desktop {
             @apply hidden lg:flex items-center;

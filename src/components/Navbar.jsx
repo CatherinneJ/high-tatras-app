@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
             <div className="inner">
-                 {/* Logo/image */}
+                 {/* Logo/image */}git
                 <img 
                 src="/images/logoTatry.png"
                 className="rounded-full w-12 h-10 mb-3 rounded-sm self-start text-gold" 
