@@ -32,7 +32,8 @@ const Contact = () => {
                 <h1 className="text-3xl font-serif md:text-3xl text-left text-white">Planning your trip or have questions? </h1>
                 <p className="italic text-gold text-3xl font-serif underline mt-4">Send us a hi</p>
             </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">   
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">  
+                   {/* Form for message */} 
                     <form
                       ref={formRef}
                       onSubmit={handleSubmit}
@@ -77,6 +78,7 @@ const Contact = () => {
                     </div>
                     
                     <div className="mt-4">
+                       {/* Button for submit */}
                       <ButtonForm text="Send message">                    
                       </ButtonForm>
                     </div>

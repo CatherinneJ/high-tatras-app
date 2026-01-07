@@ -7,6 +7,7 @@ const Footer = () => {
                 <div className="flex flex-col justify-center">
                     <p>Terms & Conditions</p>
                 </div>
+                 {/* Social Icons */}
                 <div className="socials">
                     {socialImgs.map((socialImg, index) => (
                         <a key={index}

@@ -30,7 +30,7 @@ body {
 
 @layer components {
   .hero-banner {
-    height: 250px;
+    
     position: relative;
     overflow: hidden; 
     margin-left: auto;
@@ -56,12 +56,7 @@ body {
         }
     }
 
-/* .cta-wrapper {
-        @apply relative z-20 cursor-pointer;
-    } */
-
-    
-
+  
 .slide {
   display: inline-block;
   height: 2rem; 

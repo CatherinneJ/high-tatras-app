@@ -1,5 +1,6 @@
 import React from 'react'
 
+ {/* Arrow / get to home  */}
 const ScrollHome = () => {
   return (
     <a

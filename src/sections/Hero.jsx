@@ -2,15 +2,19 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section id="hero" className=" relative w-full min-h-screen text-white">
+    <section id="hero" className=" relative w-full text-white overflow-hidden">
       
-      <img 
-      src="/images/bg.png" 
-      alt="background" 
-      className="absolute inset-0 w-full h-full object-cover z-0"/>
+      {/* Background */}
+      <div className="absolute inset-0 h-[60%] md:h-full">
+      <img
+        src="/images/bg.png"
+        alt="background"
+        className="w-full h-full object-cover"
+      />
+     </div>
       
       {/* Contest above banner */}
-      <div className="relative z-10 pt-24 px-4 md:px-20 text-center">
+      <div className="relative z-10 pt-14 md:pt-24 px-4 md:px-20 text-center">
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif leading-tight text-white">
           Experience breathtaking mountains, crystal-clear lakes, and unforgettable adventures in the heart of Slovakia.
         </h3>
@@ -18,9 +22,9 @@ const Hero = () => {
           A perfect destination for hiking, skiing, and relaxing in pristine nature all year round.
         </h3>
       </div>
-      <div className="relative mt-10 px-4 md:px-12">
+      <div className="relative z-10 mt-6 px-4 md:px-12">
         {/* Banner picture */}
-        <div className="relative hero-banner md:h-[280px] lg:h-[300px] rounded-xl">
+        <div className="h-[200px] sm:h-[240px] md:h-[280px] lg:h-[300px] rounded-xl overflow-hidden">
           <img
             src="/images/mountains.jpg"
             alt="Mountains"
@@ -28,7 +32,7 @@ const Hero = () => {
           />
 
           {/* Overlay for contrast*/}
-          <div className="absolute inset-0 bg-black/30 z-10"></div>
+          <div className="absolute inset-0"></div>
 
           {/* Text over banner */}
           <div className="absolute inset-0 flex items-center justify-center z-20">

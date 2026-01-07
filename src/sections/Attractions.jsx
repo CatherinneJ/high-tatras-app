@@ -15,7 +15,7 @@ const Attractions = () => {
                 with piles of mountain experiences!
             </h2>
         </div>
-
+             {/* Cards */}
         <div className="flex flex-col md:flex-row justify-center gap-6">
             <div className="w-full md:w-1/3 border border-white-300 p-6 shadow-sm hover:shadow-md transition">
                 <div className="w-12 h-20 mb-5 rounded-sm self-start ">

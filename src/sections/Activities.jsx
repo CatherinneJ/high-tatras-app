@@ -19,7 +19,7 @@ const Activities = () => {
             <span className="text-2xl md:text-3xl font-semibold">
               Enjoy
             </span>
-
+               {/* Animations - loop */}
             <span className="slide relative h-16 w-48 overflow-hidden">
               <span className="wrapper absolute flex flex-col">
                 {[...words, ...words].map((word, index) => (
@@ -43,7 +43,8 @@ const Activities = () => {
             <span className="text-xl md:text-2xl font-semibold">
               the Best Activities.
             </span>
-           
+
+            {/* Left size */}
           </div>
                 <img 
                 src="/images/winter.jpg" 
@@ -57,6 +58,8 @@ const Activities = () => {
                     The ski resorts of Tatranska Lomnica, Stary Smokovec and Strbske Pleso offer top-quality skiing on 24km of slopes. Enjoy 13 km of blue-easy slopes with your family, 10 km of red-more difficult slopes or the highest located 1.2 km long black track from Lomnicke sedlo (saddle) to Skalnate Pleso. 20 km of slopes with man-made snow guarantee 5 months of skiing per year.
                 </p>
             </div>
+
+             {/* Right size */}
             <div className="flex flex-col justify-between gap-8">
                 <div>
                     <img 
